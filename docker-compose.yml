@@ -1,0 +1,9 @@
+app:
+  build: ./
+  working_dir: /root/
+  ports:
+    - "3000:3000"
+  links:
+    - database
+database:
+  image: mongo:latest
