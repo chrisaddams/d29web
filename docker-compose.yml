@@ -5,5 +5,7 @@ app:
     - "3000:3000"
   links:
     - database
+  volumes:
+  - /etc/localtime:/etc/localtime:ro
 database:
   image: mongo:latest
