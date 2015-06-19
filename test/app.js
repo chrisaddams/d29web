@@ -9,34 +9,42 @@ describe('GET /', function() {
   });
 });
 
-describe('GET /login', function() {
-  it('should return 200 OK', function(done) {
-    request(app)
-      .get('/login')
-      .expect(200, done);
-  });
-});
-
-describe('GET /signup', function() {
-  it('should return 200 OK', function(done) {
-    request(app)
-      .get('/signup')
-      .expect(200, done);
-  });
-});
-
-describe('GET /api', function() {
-  it('should return 200 OK', function(done) {
-    request(app)
-      .get('/api')
-      .expect(200, done);
-  });
-});
+//describe('GET /login', function() {
+//  it('should return 200 OK', function(done) {
+//    request(app)
+//      .get('/login')
+//      .expect(200, done);
+//  });
+//});
+//
+//describe('GET /signup', function() {
+//  it('should return 200 OK', function(done) {
+//    request(app)
+//      .get('/signup')
+//      .expect(200, done);
+//  });
+//});
+//
+//describe('GET /api', function() {
+//  it('should return 200 OK', function(done) {
+//    request(app)
+//      .get('/api')
+//      .expect(200, done);
+//  });
+//});
 
 describe('GET /contact', function() {
   it('should return 200 OK', function(done) {
     request(app)
       .get('/contact')
+      .expect(200, done);
+  });
+});
+
+describe('GET /services', function() {
+  it('should return 200 OK', function(done) {
+    request(app)
+      .get('/services')
       .expect(200, done);
   });
 });
